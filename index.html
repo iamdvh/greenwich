@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giới Thiệu Các Campus của Greenwich Việt Nam</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
+      /* CSS styles trong tệp styles.css */
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f0f0f0;
       }
+
       header {
         background-color: #008000;
         color: #fff;
         padding: 10px;
         text-align: center;
       }
+
       h1 {
         font-size: 36px;
       }
+
       main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         max-width: 800px;
         margin: 20px auto;
         padding: 20px;
@@ -28,13 +36,36 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-      h2 {
-        font-size: 24px;
-        margin-top: 20px;
+
+      .campus-card {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
       }
+
+      .campus-card:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
       p {
         font-size: 16px;
-        line-height: 1.6;
       }
     </style>
   </head>
@@ -43,26 +74,43 @@
       <h1>Giới Thiệu Các Campus của Greenwich Việt Nam</h1>
     </header>
     <main>
-      <h2>Campus 1: Hà Nội</h2>
-      <p>
-        Greenwich Việt Nam có một trường đại học tại Hà Nội, tọa lạc ở trung tâm
-        thành phố với cơ sở vật chất hiện đại và đội ngũ giảng dạy chất lượng.
-      </p>
-      <a href="campus_hanoi">Xem chi tiết</a>
+      <a class="campus-card" href="campus_hanoi">
+        <img
+          src="https://vcdn-vnexpress.vnecdn.net/2022/06/03/Image-249300564-ExtractWord-0-8746-7982-1654231437.png"
+          alt="Campus Hà Nội"
+        />
+        <h2>Campus 1: Hà Nội</h2>
+        <p>
+          Greenwich Việt Nam có một trường đại học tại Hà Nội, tọa lạc ở trung
+          tâm thành phố với cơ sở vật chất hiện đại và đội ngũ giảng dạy chất
+          lượng.
+        </p>
+      </a>
 
-      <h2>Campus 2: Hồ Chí Minh</h2>
-      <p>
-        Chi nhánh tại Hồ Chí Minh của Greenwich Việt Nam cung cấp môi trường học
-        tập đa dạng và cơ hội học tập tiện lợi cho sinh viên tại thành phố này.
-      </p>
-      <a href="campus_hcm">Xem chi tiết</a>
+      <a class="campus-card" href="campus_hcm">
+        <img
+          src="https://greenwich.edu.vn/wp-content/uploads/2022/05/7O9A9841-1024x683.jpg"
+          alt="Campus Hồ Chí Minh"
+        />
+        <h2>Campus 2: Hồ Chí Minh</h2>
+        <p>
+          Chi nhánh tại Hồ Chí Minh của Greenwich Việt Nam cung cấp môi trường
+          học tập đa dạng và cơ hội học tập tiện lợi cho sinh viên tại thành phố
+          này.
+        </p>
+      </a>
 
-      <h2>Campus 3: Đà Nẵng</h2>
-      <p>
-        Đà Nẵng là nơi có một campus khác của Greenwich Việt Nam, với sự kết hợp
-        tuyệt vời giữa học tập và cuộc sống biển.
-      </p>
-      <a href="campus_danang">Xem chi tiết</a>
+      <a class="campus-card" href="campus_danang">
+        <img
+          src="https://reviewedu.net/wp-content/uploads/2021/10/dai-hoc-fpt-greenwich-2-1.jpg"
+          alt="Campus Đà Nẵng"
+        />
+        <h2>Campus 3: Đà Nẵng</h2>
+        <p>
+          Đà Nẵng là nơi có một campus khác của Greenwich Việt Nam, với sự kết
+          hợp tuyệt vời giữa học tập và cuộc sống biển.
+        </p>
+      </a>
     </main>
   </body>
 </html>
